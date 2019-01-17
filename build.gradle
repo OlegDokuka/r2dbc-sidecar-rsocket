@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'io.r2dbc.sidecar'
+version '0.0.1.BUILD-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.rsocket:rsocket-core:0.11.14'
+    implementation 'io.rsocket:rsocket-transport-netty:0.11.14'
+
+    testImplementation 'junit:junit:4.12'
+}
